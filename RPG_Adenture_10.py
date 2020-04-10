@@ -1,5 +1,6 @@
 import os
 import time
+#after the end of the world
 def menuScreen():
     print("WELCOME!")
     print("RPG Adventure 10")
