@@ -98,6 +98,23 @@ def goLeftOrRightDownTunnel():
         items[0].append(5)
         print("After collecting the Nacho Armor, you turn around and go back the way you came.")
     return decision
+def covid_19():
+  decision = input('The Nacho Reaper sneezes in your direction. Do you run or fight?')
+  while decision != "run" and decision != "fight":
+    print("Invalid")
+    print('The Nacho Reaper sneezes in your direction. Do you run or fight?')
+    decision = input()
+  if decision == 'fight':
+    print('You might be infected now, but suddenly a burrito sword appears.')
+    items.append("Burrito Sword")
+    items[0].append(5)
+    print("After successfully defending yourself against the Nacho Reaper, you continue on your journey.")
+  else:
+    print('You start to run and fall into an enormous vat of nacho cheese.')
+  print("The Nacho Reaper tells you about the new virus.")
+  print("As he's telling you, he starts to sweat.")
+  print("You start to back away, but it becomes clear that he is infected.")
+  print("Your fight or flight instinct kicks in.")
 
 #This is an RPG Game!
 #Title Screen
@@ -129,6 +146,7 @@ if option_title == 'New Game':
     print('The left tunnel is glowing yellowish-orange.')
     print('The right tunnel is smells like cinnamon twists.')
     decision = goLeftOrRightDownTunnel()
+    decision = covid_19()
             
     
 
